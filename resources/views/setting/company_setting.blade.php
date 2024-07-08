@@ -51,7 +51,7 @@
                             <div class="input-group">
                                
                                 <span class="input-group-addon">
-                                    <i class="material-icons">store</i>
+                                    <i class="material-icons">Tienda</i>
                                 </span>
                                 <div class="form-line">
                                     <input type="text" value="{{ $company->name }}" class="form-control" name="name" placeholder="Nombre de la empresa">
@@ -64,7 +64,7 @@
                             <div class="input-group">
                                
                                 <span class="input-group-addon">
-                                    <i class="material-icons">phone</i>
+                                    <i class="material-icons">Telefono</i>
                                 </span>
                                 <div class="form-line">
                                     <input type="text" value="{{ $company->phone }}" class="form-control" name="phone" placeholder="Teléfono de la empresa">
@@ -77,7 +77,7 @@
                             <div class="input-group">
                                 
                                 <span class="input-group-addon">
-                                    <i class="material-icons">map</i>
+                                    <i class="material-icons">Mapa</i>
                                 </span>
                                 <div class="form-line">
                                     <input type="text" value="{{ $company->address }}" class="form-control" name="address" placeholder="Dirección de la empresa">

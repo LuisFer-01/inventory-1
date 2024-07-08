@@ -18,14 +18,14 @@
 			<div class="header">
 				<h2>
 					
-					Due Report
+					Reporte Pendiente
 					
 				</h2>
 
 			<h2 class="pull-right">
 					
 			<a href="{{ url('print-report') }}?type={{ $type }}&start_date={{ $start_date }}&end_date={{ $end_date }}&category_id={{ $category_id }}&product_id={{ $product_id }}&stock_id={{ $stock_id }}&vendor_id={{ $vendor_id }}&customer_id={{ $customer_id }}&user_id={{ $user_id }}" target="_blank" type="button" class="btn bg-teal btn-circle waves-effect waves-circle waves-float">
-                               <i class="material-icons">print</i>
+                               <i class="material-icons">Imprimir</i>
                                      </a>
 					
 			</h2>
@@ -52,15 +52,15 @@
 							</tr>  			
 
 							<tr style="border: none !important;">
-								<td colspan="4" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Due Report from {{ date('j M Y',strtotime($start_date)) }} To {{ date('j M Y',strtotime($end_date)) }}</p></td>
+								<td colspan="4" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Reporte de Pendiente de {{ date('j M Y',strtotime($start_date)) }} hasta {{ date('j M Y',strtotime($end_date)) }}</p></td>
 
 							</tr>
 							<tr>
 								
-								<th>Customer</th>
-								<th>Total Importe</th>
-								<th>Paid Importe</th>
-								<th>Due</th>
+								<th>Cliente</th>
+								<th>Importe Total</th>
+								<th>Importe Pagado</th>
+								<th>Pendiente</th>
 							</tr>
 						</thead>
 						

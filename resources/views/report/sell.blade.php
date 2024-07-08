@@ -18,14 +18,14 @@
 			<div class="header">
 				<h2>
 					
-					Sell Report
+					Reporte de Ventas
 					
 				</h2>
 
 				<h2 class="pull-right">
 					
 			<a href="{{ url('print-report') }}?type={{ $type }}&start_date={{ $start_date }}&end_date={{ $end_date }}&category_id={{ $category_id }}&product_id={{ $product_id }}&stock_id={{ $stock_id }}&vendor_id={{ $vendor_id }}&customer_id={{ $customer_id }}&user_id={{ $user_id }}" target="_blank" type="button" class="btn bg-teal btn-circle waves-effect waves-circle waves-float">
-                               <i class="material-icons">print</i>
+                               <i class="material-icons">Imprimir</i>
                                      </a>
 					
 				</h2>
@@ -52,21 +52,21 @@
 							</tr>  			
 
 							<tr style="border: none !important;">
-								<td colspan="11" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Sell Report from {{ date('j M Y',strtotime($start_date)) }} To {{ date('j M Y',strtotime($end_date)) }}</p></td>
+								<td colspan="11" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Informe de Venta de {{ date('j M Y',strtotime($start_date)) }} hasta {{ date('j M Y',strtotime($end_date)) }}</p></td>
 
 							</tr>
 							<tr>
-								<th>Product</th>
+								<th>Producto</th>
 								<th>Comprobante</th>
-								<th>Sold Date</th>
-								<th>Customer</th>
-								<th>Seller</th>
-								<th>Quantity</th>
-								<th>Unit Buying Price</th>
-								<th>Unit Selling Price</th>
-								<th>Disount Importe</th>
-								<th>Total Buying Importe</th>
-								<th>Total Selling Importe</th>
+								<th>Fecha de Venta</th>
+								<th>Cliente</th>
+								<th>Vendedor</th>
+								<th>Cantidad</th>
+								<th>Precio de Compra de Unidad</th>
+								<th>Precio de Venta de Unidad</th>
+								<th>Importe Descuento</th>
+								<th>Importe Total de Compra</th>
+								<th>Importe Total de Venta</th>
 							
 							</tr>
 						</thead>

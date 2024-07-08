@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Invoice Report</title>
+	<title>Reporte Factura</title>
 	<link href="{{ url('plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -24,18 +24,18 @@
 							</tr>  	  			
 
 							<tr style="border: none !important;">
-								<td colspan="8" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Invoice Report from {{ date('j M Y',strtotime($start_date)) }} To {{ date('j M Y',strtotime($end_date)) }}</p></td>
+								<td colspan="8" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Reporte de Factura de {{ date('j M Y',strtotime($start_date)) }} hasta {{ date('j M Y',strtotime($end_date)) }}</p></td>
 
 							</tr>
 							<tr>
-								<th>Invoice No.</th>
-								<th>Invoice Date</th>
-								<th>Customer</th>
-								<th>Seller</th>
-								<th>Details</th>
-								<th>Total Importe</th>
-								<th>Paid Importe</th>
-								<th>Due</th>
+								<th>Factura No.</th>
+								<th>Fecha de Factura</th>
+								<th>Cliente</th>
+								<th>Vendedor</th>
+								<th>Detalles</th>
+								<th>Importe Total</th>
+								<th>Importe Pagado</th>
+								<th>Pendiente</th>
 							</tr>
 						</thead>
 						
@@ -59,7 +59,7 @@
 								<td>{{ $value->customer->customer_name }}</td>
 								<td>{{ $value->user->name }}</td>
 								<td><a href="{{ route('invoice.show',$value->id) }}" target="_blank" type="button" class="btn bg-orange btn-circle waves-effect waves-circle waves-float">
-                                         <i class="material-icons">print</i>
+                                         <i class="material-icons">Imprimir</i>
                                      </a></td>
 								<td>{{ $value->total_amount }}</td>
 								<td>{{ $value->paid_amount }}</td>

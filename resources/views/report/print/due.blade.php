@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Due Report</title>
+	<title>Reporte de Pendiente</title>
 	<link href="{{ url('plugins/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -24,15 +24,15 @@
 							</tr>  			
 
 							<tr style="border: none !important;">
-								<td colspan="4" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Due Report from {{ date('j M Y',strtotime($start_date)) }} To {{ date('j M Y',strtotime($end_date)) }}</p></td>
+								<td colspan="4" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Reporte de Pendiente de {{ date('j M Y',strtotime($start_date)) }} hasta {{ date('j M Y',strtotime($end_date)) }}</p></td>
 
 							</tr>
 							<tr>
 								
-								<th>Customer</th>
-								<th>Total Importe</th>
-								<th>Paid Importe</th>
-								<th>Due</th>
+								<th>Cliente</th>
+								<th>Importe Total</th>
+								<th>Importe Pagado</th>
+								<th>Pendiente</th>
 							</tr>
 						</thead>
 						

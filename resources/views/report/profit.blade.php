@@ -18,14 +18,14 @@
 			<div class="header">
 				<h2>
 					
-					Profit Report
+					Reporte Ganancia
 					
 				</h2>
 
 				<h2 class="pull-right">
 					
 			<a href="{{ url('print-report') }}?type={{ $type }}&start_date={{ $start_date }}&end_date={{ $end_date }}&category_id={{ $category_id }}&product_id={{ $product_id }}&stock_id={{ $stock_id }}&vendor_id={{ $vendor_id }}&customer_id={{ $customer_id }}&user_id={{ $user_id }}" target="_blank" type="button" class="btn bg-teal btn-circle waves-effect waves-circle waves-float">
-                               <i class="material-icons">print</i>
+                               <i class="material-icons">Imprimir</i>
                                      </a>
 					
 				</h2>
@@ -52,15 +52,15 @@
 							</tr>  	 			
 
 							<tr style="border: none !important;">
-								<td colspan="5" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Profit Report from {{ date('j M Y',strtotime($start_date)) }} To {{ date('j M Y',strtotime($end_date)) }}</p></td>
+								<td colspan="5" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Reporte de Ganancia de {{ date('j M Y',strtotime($start_date)) }} hasta {{ date('j M Y',strtotime($end_date)) }}</p></td>
 
 							</tr>
 							<tr>
-								<th>Product</th>
-								<th>Quantity</th>
-								<th>Total Selling Importe</th>
-								<th>Total Buying Importe</th>
-								<th>Profit</th>
+								<th>Producto</th>
+								<th>Cantidad</th>
+								<th>Importe Total de Venta</th>
+								<th>Importe Total de Compras</th>
+								<th>Ganancia</th>
 							
 							</tr>
 						</thead>

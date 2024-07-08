@@ -18,14 +18,14 @@
 			<div class="header">
 				<h2>
 					
-					Stock Report
+					Report de Cantidad en Stock
 					
 				</h2>
 
 				<h2 class="pull-right">
 					
 			<a href="{{ url('print-report') }}?type={{ $type }}&start_date={{ $start_date }}&end_date={{ $end_date }}&category_id={{ $category_id }}&product_id={{ $product_id }}&stock_id={{ $stock_id }}&vendor_id={{ $vendor_id }}&customer_id={{ $customer_id }}&user_id={{ $user_id }}" target="_blank" type="button" class="btn bg-teal btn-circle waves-effect waves-circle waves-float">
-                               <i class="material-icons">print</i>
+                               <i class="material-icons">Imprimir</i>
                                      </a>
 					
 				</h2>
@@ -52,20 +52,20 @@
 							</tr>  				
 
 							<tr style="border: none !important;">
-								<td colspan="11" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Stock Report from {{ date('j M Y',strtotime($start_date)) }} To {{ date('j M Y',strtotime($end_date)) }}</p></td>
+								<td colspan="11" style="border: none !important;"><p style="text-align: center;font-weight: bold;">Informe de acciones de {{ date('j M Y',strtotime($start_date)) }} hasta {{ date('j M Y',strtotime($end_date)) }}</p></td>
 
 							</tr>
 							<tr>
-								<th>Category</th>
-								<th>Product</th>
+								<th>Categoria</th>
+								<th>Producto</th>
 								<th>Comprobante</th>
 								<th>Fecha</th>
-								<th>Entry By</th>
-								<th>Buying Price</th>
-								<th>Selling Price</th>
-								<th>Stock Quantity</th>
-								<th>Sold Quantity</th>
-								<th>Current Quantity</th>
+								<th>Entrada Por</th>
+								<th>Precio Compra</th>
+								<th>Precio Venta</th>
+								<th>Cantidad de Stock</th>
+								<th>Cantidad Vendida</th>
+								<th>Cantidad Actual</th>
 							</tr>
 						</thead>
 
